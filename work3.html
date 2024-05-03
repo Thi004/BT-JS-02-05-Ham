@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<h4>Bài 3: Viết hàm trả về giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được</h4>
+<script>
+    function giaithua(a) {
+        let d = 1;
+        for (let i = a; i >= 1; i--) {
+            d *= i;
+        }
+        document.write('giai thừa của ' + a + ' là: ' + d);
+    }
+    giaithua(5);
+</script>
+</body>
+</html>

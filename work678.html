@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6-7-8</title>
+</head>
+<body>
+<h4>Bài 6: Viết hàm nhận vào 1 mảng, trả về tổng các số > 10</h4>
+
+<script>
+    let arr = [12, 5, 8, 45, 11];
+
+    function find(arr) {
+        let tong = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > 10) {
+                tong += arr[i];
+            }
+        }
+        return tong;
+    }
+    document.write('Tổng các số lớn hơn 10 trong mảng là: ' + tong);
+</script>
+<hr>
+<h4>Bài 7: Viết hàm nhận vào 1 mảng, trả về số lượng các số > 10</h4>
+
+</body>
+</html>

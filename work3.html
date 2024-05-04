@@ -7,14 +7,14 @@
 <body>
 <h4>Bài 3: Viết hàm trả về giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được</h4>
 <script>
-    function giaithua(a) {
+    function getFactorial(a) {
         let d = 1;
         for (let i = a; i >= 1; i--) {
-            d *= i;
+            d = d * i;
         }
-        document.write('giai thừa của ' + a + ' là: ' + d);
+        return d;
     }
-    giaithua(5);
+    alert(getFactorial(5));
 </script>
 </body>
 </html>

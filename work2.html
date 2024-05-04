@@ -8,17 +8,18 @@
 Bài 2: Viết hàm trả về diện tích, hàm tính chu vi hình tròn của bán kính được đưa vào.
 Gọi hàm vừa xây dựng được
 <script>
-    function dientich(r) {
+    function getArea(r) {
         let s = 3.14 * Math.pow(r, 2);
+        s = Math.round(s); // làm tròn số
         return s;
     }
-    alert(dientich(5));
+    alert(getArea(5));
 
-    function chuvi(r) {
+    function getPerimeter(r) {
         let c = 2 * 3.14 * r;
         return c;
     }
-    alert(chuvi(6));
+    alert(getPerimeter(6));
 </script>
 </body>
 </html>

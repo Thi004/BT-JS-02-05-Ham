@@ -6,13 +6,13 @@
 </head>
 <body>
 Bài 1: Viết hàm trả về bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được
-<
+
 <script>
-    function binhphuong(a) {
-        a = Math.pow(a, 2);
-        return a;
+    function getSquare(a) {
+        let s = Math.pow(a, 2); // a^2, Math.pow(a, 3) = a^3
+        return s; // giúp trả về dữ liệu cho hàm, gặp return hàm dừng ngay và thoát khỏi hàm
     }
-    alert(binhphuong(5));
+    alert(getSquare(5));
 </script>
 </body>
 </html>

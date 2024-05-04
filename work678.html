@@ -8,21 +8,53 @@
 <h4>Bài 6: Viết hàm nhận vào 1 mảng, trả về tổng các số > 10</h4>
 
 <script>
-    let arr = [12, 5, 8, 45, 11];
-
-    function find(arr) {
+    function getSum(arr) {
         let tong = 0;
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] > 10) {
-                tong += arr[i];
+                tong = tong + arr[i]; // tong += arr[i]
             }
         }
         return tong;
     }
-    document.write('Tổng các số lớn hơn 10 trong mảng là: ' + tong);
+
+    //let array = [12, 5, 8, 1, 11]; cho sẵn
+    // muốn tự nhập aray
+    let array = [];
+    let soLuongPhanTu = +prompt("Nhập sô lượng phần tử mảng: ");
+
+    for (let i = 0; i < soLuongPhanTu; i++) {
+        let phanTu = +prompt("Nhập phần thứ " + i);
+        array.push(phanTu);
+    }
+    //alert(getSum(array));
+
 </script>
 <hr>
 <h4>Bài 7: Viết hàm nhận vào 1 mảng, trả về số lượng các số > 10</h4>
+<script>
+    function getCount(arr) {
+        let count = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > 10) {
+                count++;
+            }
+        }
+        return count;
+    }
 
+    //  alert(getCount(array))
+</script>
+<hr>
+<h4>Bài 8: Viết hàm nhận vào 1 mảng, trả TBC các số > 10,
+    (Phải dùng các hàm đã tạo ở bài 6 và 7)</h4>
+<script>
+    function getAvg(arr) {
+        let avg = getSum(arr) / getCount(arr); // 2 hàm này có ở bài 6 và 7
+        return avg;
+    }
+
+    alert(getAvg(array));
+</script>
 </body>
 </html>
